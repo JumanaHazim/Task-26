@@ -1,0 +1,589 @@
+
+ body {
+  font-family: 'Montserrat', sans-serif;
+ }
+
+
+/*  start upper navbar home section */
+
+    .upper-nav {
+      background: #d0545e;
+      color: #fff;
+      padding: 12px 0;
+      font-size: 16px;
+    }
+    
+    .upper-nav .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      margin-right: 6px;
+      border-radius: 50%;
+      background: #fff;
+      color: #111;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+/* end upper navbar home section */
+
+
+ /* Start navbar home section */
+ 
+    .search-box {
+      position: relative;
+      width: 300px;
+      max-width: 420px;
+    }
+    .search-box .search-icon {
+      position: absolute;
+      top: 30%;
+      left: 16px;
+      width: 20px;
+      height: 20px;
+    }
+    .search-box .form-control {
+      width: 100%;
+      height: 48px;
+      padding-left: 50px;
+      background: #e4f5ea;
+      border: 0;
+      border-radius: 25px;
+    }
+    .btn-app{
+      background: #d0545e;
+      color: #fff;
+        border-radius: 4px;
+      padding: 8px 18px;
+       border: 0;
+       font-weight: 600;
+    }
+
+ /* end navbar home section */
+
+
+ /*start  hero home section  */
+
+
+ .btn-main {
+      background: #d0545e;
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    
+    .btn-main:hover {
+      background: #b9444e;
+      color: #fff;
+    }
+
+.login-button {
+      background: #fde4dc;
+      color: #d0545e;
+      border: 0;
+      border-radius: 4px;
+      padding: 6px 15px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .login-button:hover { background: #fbd5ca; color: #b9444e; }
+
+.hero {
+  margin-top: 20px;
+      height: 570px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      color: #fff;
+      background-color: #9d454a;
+  background-image:
+    linear-gradient(90deg, rgba(157,69,74,.45) 0%, rgba(157,69,74,.25) 100%),
+    url('../img/back-header-back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    }
+    .hero h1 {
+      font-weight: 700;
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 25px;
+      line-height: 1.5;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+
+
+ /* end  hero home section */
+
+
+/* start photography home section  */
+
+.photography-home {
+  padding: 40px 0;
+}
+
+.photog-card {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.photog-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover; 
+  display: block;
+}
+
+.photo-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 14px;
+  background-color: rgba(235, 150, 140, 0.55);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 14px;
+}
+
+/* end photography home section  */
+
+
+/* start  our providers home section */
+
+.provider-card {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.provider-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.provider-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 6px 0;
+  background: #cfe8dc;
+  color: #222;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.our-providers {
+    padding: 20px 0;
+}
+
+/* end our providers home section */
+
+
+/* start our services home section */
+
+.our-services {
+  padding: 40px 0;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  height: 100%;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+.service-body {
+  padding: 18px 22px 10px  ;
+}
+
+.service-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.service-cat {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.rating i {
+  color: #c99a00;
+  font-size: 17px;
+}
+
+.rating .count {
+  color: #4a90e2;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.btn-view {
+  display: block;
+  width: 100%;
+  margin: 22px  0;
+  padding: 6px 0;
+  font-size: 15px;
+  text-align: center;
+  color: #777;
+  background: transparent;
+  border: 1px solid #888;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-view:hover {
+  background: #d9575f;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* end our services home section */
+
+
+/* start main home section */
+
+.main-home {
+  padding: 40px 0;
+  margin-right: 35px;
+}
+
+.join-title {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.join-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #222;
+  max-width: 330px;
+  margin-bottom: 20px;
+}
+
+.btn-join {
+  display: inline-block;
+  width: 175px;
+  padding: 12px 0;
+  text-align: center;
+  background: #d9575f;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-join:hover {
+  background: #c24850;
+  color: #fff;
+  text-decoration: none;
+}
+
+.join-card {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.join-card img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.join-label {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  margin: 0;
+  padding: 6px 0;
+  background: rgba(200, 225, 212, 0.9);
+  color: #222;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* end main home section */
+
+
+/*  start news letter home section */
+
+    .news-letter {
+    padding: 30px 0 25px;
+   text-align: center;
+   }
+    .news-letter h2 {
+      font-weight: 600;
+      font-size: 36px;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    .news-letter p {
+      color: #5b6670;
+      letter-spacing: .8px;
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+    .email-box { 
+      position: relative; 
+      width: 313px;
+      max-width: 100%;
+      }
+    .email-box i {
+      position: absolute;
+      top: 30%;
+      left: 12px;
+      font-size:18px;
+      color: #222;
+    }
+    .email-box .form-control {
+      height: 37px;
+      padding-left: 40px;
+      background: #e4f5ea;
+      border: 0;
+      border-radius: 4px;
+    }
+    .email-box .form-control::placeholder { color: #8a9a92; }
+    .btn-submit {
+      background: #d0545e;
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      height: 35px;
+      padding: 0 16px;
+      font-size: 14px;
+    }
+    .btn-submit:hover {
+      background: #b9444e;
+    color: #fff;
+    }
+
+/*  end news letter home section */
+
+/* start download mobile app home section */
+
+.download-app {
+    background-image: url(../img/Rectangle\ 20.png), url(../img/Rectangle\ 19.png);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 390px;
+    border-radius: 15px;
+    padding: 65px 30px !important;
+    margin: 20px auto;
+    max-width: 70%;
+    color: white;
+}
+
+.download-app h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.download-app p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #f1f1f1;
+}
+
+.download-app .btn {
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.download-app .btn i {
+    margin-right: 8px;
+}
+
+.download-app .btn-android {
+    background-color: #ffdbd0;
+    color: #a52d43;
+    border: 1px solid #ffdbd0;
+}
+
+.download-app .btn-android:hover {
+    background-color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .download-app {
+        max-width: 95%;
+        padding: 40px 20px !important;
+        min-height: auto;
+        background-position: center;
+    }
+
+    .download-app h3 {
+        font-size: 28px;
+    }
+
+    .download-app p {
+        font-size: 14px;
+    }
+
+    .download-app .btn {
+        margin-bottom: 10px;
+    }
+}
+
+/* end download mobile app home section */
+
+
+/* start about henna home section */
+
+.about-henna {
+    padding: 50px 0;
+}
+
+.about-henna h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-card {
+    min-height: 200px;
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+}
+
+.about-card h3 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.about-card p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+.card-red {
+    background: linear-gradient(120deg, #d85b63, #ff8069);
+}
+
+.card-teal {
+    background: linear-gradient(120deg, #20575c, #55d5d1);
+}
+
+/* end about henna home section */
+
+
+/* start footer home section */
+
+
+    .footer {
+        padding: 50px 0 25px;
+        }
+
+    .footer .logo {
+      height: 48px;
+        margin-bottom: 6px;
+        }
+    .footer .about-text {
+      color: #5b6670;
+      font-size: 16px;
+      line-height: 1.85;
+      max-width: 480px;
+      margin-bottom: 18px;
+    }
+ 
+    .contact-us {
+      display: flex;
+      align-items: center;
+      }
+    .contact-us .icon-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: #fde4dc;
+    }
+    .contact-us .icon-circle img { width: 24px; height: 24px; }
+    .contact-us small {
+      display: block;
+      color: #7e7a7a;
+        font-size: 14px;
+      }
+
+    .contact-us a {
+      color: #d0545e;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+    }
+ 
+    .footer h6 {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .footer ul { list-style: none; padding: 0; margin: 0; }
+    .footer ul li { margin-bottom: 6px; }
+    .footer ul a { color: #5b6670; font-size: 14px; text-decoration: none; }
+    .footer ul a:hover { color: #d0545e; }
+ 
+    .copyright {
+      text-align: center;
+      color: #5b6670;
+      font-size: 15px;
+      margin: 36px 0 0;
+    }
+ 
+
+
+/* end footer home section */
