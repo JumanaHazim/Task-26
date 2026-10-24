@@ -32,8 +32,7 @@ sliders.forEach((slider) => {
     const walk = (x - startX) * 1.5;
     slider.scrollLeft = scrollLeft - walk;
   });
-
-  // منع فتح روابط view أثناء السحب بالماوس
+.
   slider.addEventListener('click', (e) => {
     if (isDragging) {
       e.preventDefault();
