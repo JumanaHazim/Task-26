@@ -32,7 +32,6 @@ sliders.forEach((slider) => {
     const walk = (x - startX) * 1.5;
     slider.scrollLeft = scrollLeft - walk;
   });
-.
   slider.addEventListener('click', (e) => {
     if (isDragging) {
       e.preventDefault();
