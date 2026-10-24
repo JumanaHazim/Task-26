@@ -1,5 +1,4 @@
-
- body {
+body {
   font-family: 'Montserrat', sans-serif;
  }
 
@@ -587,3 +586,57 @@
 
 
 /* end footer home section */
+
+
+/* ---------- Navbar ثابت (CSS بس) ---------- */
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: #fff;
+  
+}
+
+
+/* ---------- Slider: بتدوسي على السهم والكروت تتقلب ---------- */
+.h-slider { position: relative; }
+
+.slider-track {
+  display: flex;
+  overflow-x: hidden;               /* الكروت اللي بره الحواف بتتقص، ومفيش سحب غير بالأسهم */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;            /* Firefox */
+  padding: 10px 0 24px;             /* عشان ظل الكروت ما يتقصش */
+}
+.slider-track::-webkit-scrollbar { display: none; }
+
+.slider-item {
+  flex: 0 0 247px;                  /* عرض الكارت */
+  margin-right: 38px;               /* المسافة بين الكروت */
+  scroll-snap-align: start;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background: #d0545e;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+  cursor: pointer;
+}
+.slider-btn:hover { background: #b9444e; }
+.slider-btn:focus { outline: none; }
+.slider-btn:disabled { opacity: .35; cursor: default; }
+.slider-btn.prev { left: -20px; }
+.slider-btn.next { right: -20px; }
+@media (max-width: 575.98px) {
+  .slider-btn.prev { left: -8px; }
+  .slider-btn.next { right: -8px; }
+}
