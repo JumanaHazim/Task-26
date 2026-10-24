@@ -1,7 +1,7 @@
-body {
+
+ body {
   font-family: 'Montserrat', sans-serif;
  }
-
 
 /*  start upper navbar home section */
 
@@ -65,7 +65,6 @@ body {
 
  /*start  hero home section  */
 
-
  .btn-main {
       background: #d0545e;
       color: #fff;
@@ -120,8 +119,6 @@ body {
       margin-bottom: 30px;
     }
 
-
-
  /* end  hero home section */
 
 
@@ -133,15 +130,16 @@ body {
 
 .photog-card {
   position: relative;
-  width: 100%;
+  flex: 0 0 calc((100% - (16px * 4)) / 5);
   border-radius: 20px;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .photog-card img {
   width: 100%;
   height: 230px;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
 }
 
@@ -160,23 +158,62 @@ body {
   border-radius: 14px;
 }
 
+@media (max-width: 992px) {
+  .photog-card {
+    flex: 0 0 calc((100% - (16px * 2)) / 3);
+  }
+}
+
+@media (max-width: 576px) {
+  .photog-card {
+    flex: 0 0 calc((100% - 16px) / 2);
+  }
+}
 /* end photography home section  */
 
+/* Shared code in 3 sections */
+.cards-slider {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  padding: 10px 4px 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
-/* start  our providers home section */
+.cards-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-slider.active {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+/* end Shared code*/
+
+/*  start our providers home section */
+
+.our-providers {
+  padding: 20px 0;
+}
 
 .provider-card {
-    position: relative;
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  flex: 0 0 calc((100% - (16px * 4)) / 5);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
 }
 
 .provider-card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
 }
 
 .provider-label {
@@ -194,14 +231,10 @@ body {
   border-radius: 6px;
 }
 
-.our-providers {
-    padding: 20px 0;
-}
-
-/* end our providers home section */
+/*  end our providers home section */
 
 
-/* start our services home section */
+/*   start our services  home section*/
 
 .our-services {
   padding: 40px 0;
@@ -211,20 +244,22 @@ body {
   background: #fff;
   border-radius: 22px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  height: 100%;
-  width: 100%;
-  padding-bottom: 20px;
+  flex: 0 0 calc((100% - (16px * 4)) / 5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .service-card img {
   width: 100%;
-  height: auto;
+  height: 180px;
   display: block;
-  border-radius: 0;
+  pointer-events: none;
 }
 
 .service-body {
-  padding: 18px 22px 10px  ;
+  padding: 18px 20px 15px;
 }
 
 .service-title {
@@ -236,12 +271,12 @@ body {
 .service-cat {
   font-size: 13px;
   color: #444;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .rating i {
   color: #c99a00;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .rating .count {
@@ -253,7 +288,7 @@ body {
 .btn-view {
   display: block;
   width: 100%;
-  margin: 22px  0;
+  margin-top: 15px;
   padding: 6px 0;
   font-size: 15px;
   text-align: center;
@@ -262,12 +297,26 @@ body {
   border: 1px solid #888;
   border-radius: 4px;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .btn-view:hover {
   background: #d9575f;
   color: #fff;
-  text-decoration: none;
+  border-color: #d9575f;
+}
+@media (max-width: 992px) {
+  .provider-card,
+  .service-card {
+    flex: 0 0 calc((100% - (16px * 2)) / 3); 
+  }
+}
+
+@media (max-width: 576px) {
+  .provider-card,
+  .service-card {
+    flex: 0 0 calc((100% - 16px) / 2);
+  }
 }
 
 /* end our services home section */
@@ -399,6 +448,7 @@ body {
     }
 
 /*  end news letter home section */
+
 
 /* start download mobile app home section */
 
@@ -583,60 +633,4 @@ body {
       margin: 36px 0 0;
     }
  
-
-
 /* end footer home section */
-
-
-/* ---------- Navbar ثابت (CSS بس) ---------- */
-.main-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1030;
-  background: #fff;
-  
-}
-
-
-/* ---------- Slider: بتدوسي على السهم والكروت تتقلب ---------- */
-.h-slider { position: relative; }
-
-.slider-track {
-  display: flex;
-  overflow-x: hidden;               /* الكروت اللي بره الحواف بتتقص، ومفيش سحب غير بالأسهم */
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none;            /* Firefox */
-  padding: 10px 0 24px;             /* عشان ظل الكروت ما يتقصش */
-}
-.slider-track::-webkit-scrollbar { display: none; }
-
-.slider-item {
-  flex: 0 0 247px;                  /* عرض الكارت */
-  margin-right: 38px;               /* المسافة بين الكروت */
-  scroll-snap-align: start;
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  width: 42px;
-  height: 42px;
-  border: 0;
-  border-radius: 50%;
-  background: #d0545e;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
-  cursor: pointer;
-}
-.slider-btn:hover { background: #b9444e; }
-.slider-btn:focus { outline: none; }
-.slider-btn:disabled { opacity: .35; cursor: default; }
-.slider-btn.prev { left: -20px; }
-.slider-btn.next { right: -20px; }
-@media (max-width: 575.98px) {
-  .slider-btn.prev { left: -8px; }
-  .slider-btn.next { right: -8px; }
-}
